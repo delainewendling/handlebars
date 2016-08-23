@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Handlebars</title>
 </head>
 <body>
 <!-- This is where the compiled views will be injected -->
 <div id="entryOutput"></div>
-
-<script id="entry-template" type="text/x-handlebars-template">
-  <div class="entry">
-    <h1>{{title}}</h1>
-    <div class="body">
-      {{body}}
-    </div>
-  </div>
-  <ul>
-    {{#each tags}}
-    <li>{{category}}: {{name}}</li>
-    {{/each}}
-  </ul>
-</script>
+<button id="ssBtn">Show Solar System Data</button>
+<div id="ssOutput"></div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/handlebars/handlebars.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="dist/app.js"></script>
 </body>
 </html>
